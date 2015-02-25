@@ -1,146 +1,148 @@
 <html>
 <head>
   <title>Calculadora Jhon Mera</title>
+  <script src="logica.js"></script>
 </head>
 <body>
 <div><h2>Calculadora Jhon Mera por Git</h2></div>
   
   <table width="200" border="1">
+  <form name="form" method="" action="">
   <tr>
     <td>&nbsp;</td>
-    <td colspan="8"><form id="form21" name="form21" method="post" action="">
+    <td colspan="8">
       <label>
-        <input type="text" name="txtResultado" id="txtResultado" />
+        <input type="text" name="txtResultado"  value=0 />
         </label>
-    </form>
+    
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><form id="form1" name="form1" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn1" id="btn1" value="1" />
+        <input type="button" name="btn1" id="btn1" value="1" onclick"darNumero(1)" />
         </label>
-    </form>
     </td>
-    <td><form id="form2" name="form2" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn2" id="btn2" value="2" />
+        <input type="button" name="btn2" id="btn2" value="2" onClick"darNumero(2)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form3" name="form3" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn3" id="btn3" value="3" />
+        <input type="button" name="btn3" id="btn3" value="3" onClick"darNumero(3)" />
         </label>
-    </form>
+    
     </td>
-    <td><form id="form4" name="form4" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn4" id="btn4" value="4" />
+        <input type="button" name="btn4" id="btn4" value="4" onClick"darNumero(4)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form5" name="form5" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn5" id="btn5" value="5" />
+        <input type="button" name="btn5" id="btn5" value="5" onClick"darNumero(5)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form6" name="form6" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn6" id="btn6" value="6" />
+        <input type="button" name="btn6" id="btn6" value="6" onClick"darNumero(6)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form7" name="form7" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn7" id="btn7" value="7" />
+        <input type="button" name="btn7" id="btn7" value="7" onClick"darNumero(7)"/>
         </label>
-    </form>
+
     </td>
-    <td><form id="form8" name="form8" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn8" id="btn8" value="8" />
+        <input type="button" name="btn8" id="btn8" value="8" onClick"darNumero(8)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form9" name="form9" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn9" id="btn9" value="9" />
+        <input type="button" name="btn9" id="btn9" value="9" onClick"darNumero(9)"/>
         </label>
-    </form>
+    
     </td>
-    <td><form id="form10" name="form10" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btn0" id="btn0" value="0" />
+        <input type="button" name="btn0" id="btn0" value="0" onClick"darNumero(0)"/>
         </label>
-    </form>
-    </td>
-  </tr>
-  <tr>
-    <td><form id="form11" name="form11" method="post" action="">
-      <label>
-        <input type="submit" name="btnMas" id="btnMas" value="+" />
-        </label>
-    </form>
-    </td>
-    <td><form id="form12" name="form12" method="post" action="">
-      <label>
-        <input type="submit" name="btnMenos" id="btnMenos" value="-" />
-        </label>
-    </form>
-    </td>
-    <td><form id="form13" name="form13" method="post" action="">
-      <label>
-        <input type="submit" name="btnMult" id="btnMult" value="*" />
-        </label>
-    </form>
-    </td>
-    <td><form id="form14" name="form14" method="post" action="">
-      <label>
-        <input type="submit" name="btnDiv" id="btnDiv" value="/" />
-        </label>
-    </form>
-    </td>
-    <td colspan="3"><form id="form15" name="form15" method="post" action="">
-      <label>
-        <input type="submit" name="btnRaiz" id="btnRaiz" value="Raiz" />
-        </label>
-    </form>
-    </td>
-    <td colspan="3"><form id="form16" name="form16" method="post" action="">
-      <label>
-        <input type="submit" name="btnCuadrado" id="btnCuadrado" value="X" />
-        </label>
-    </form>
+
     </td>
   </tr>
   <tr>
-    <td colspan="2"><form id="form17" name="form17" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btnSen" id="btnSen" value="senX" />
+        <input type="button" name="btnMas" id="btnMas" value="+" onClick"seleccionarOperacion(1)"/>
         </label>
-    </form>
+    
     </td>
-    <td colspan="2"><form id="form18" name="form18" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btnCos" id="btnCos" value="cosX" />
+        <input type="button" name="btnMenos" id="btnMenos" value="-" onClick"seleccionarOperacion(2)"/>
         </label>
-    </form>
+    
     </td>
-    <td colspan="2"><form id="form19" name="form19" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btnTan" id="btnTan" value="tanX" />
+        <input type="button" name="btnMult" id="btnMult" value="*" onClick"seleccionarOperacion(3)"/>
         </label>
-    </form>
+    
     </td>
-    <td colspan="4"><form id="form20" name="form20" method="post" action="">
+    <td>
       <label>
-        <input type="submit" name="btnIgual" id="btnIgual" value="=" />
+        <input type="button" name="btnDiv" id="btnDiv" value="/" onClick"seleccionarOperacion(4)"/>
         </label>
-    </form>
+    
+    </td>
+    <td colspan="3">
+      <label>
+        <input type="button" name="btnRaiz" id="btnRaiz" value="Raiz" />
+        </label>
+    
+    </td>
+    <td colspan="3">
+      <label>
+        <input type="button" name="btnCuadrado" id="btnCuadrado" value="X" />
+        </label>
+    
     </td>
   </tr>
+  <tr>
+    <td colspan="2">
+      <label>
+        <input type="button" name="btnSen" id="btnSen" value="senX" />
+        </label>
+    
+    </td>
+    <td colspan="2">
+      <label>
+        <input type="button" name="btnCos" id="btnCos" value="cosX" />
+        </label>
+    
+    </td>
+    <td colspan="2">
+      <label>
+        <input type="button" name="btnTan" id="btnTan" value="tanX" />
+        </label>
+    
+    </td>
+    <td colspan="4">
+      <label>
+        <input type="button" name="btnIgual" id="btnIgual" value="=" onClick="resultado()" />
+        </label>
+    
+    </td>
+  </tr>
+  </form>
 </table>
 </body>
 </html>
