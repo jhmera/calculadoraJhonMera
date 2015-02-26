@@ -1,3 +1,6 @@
+
+
+
   var num1=0;
   var num2=0; 
   var mostrado=""; 
@@ -26,12 +29,25 @@ function seleccionar(a)
       operador=4 
         document.getElementById("txtResultado").value="/";
       break; 
+     
+      case 5: 
+      operador=5 
+        document.getElementById("txtResultado").value=Math.sin(num1);
+      break; 
+
+      case 6: 
+      operador=6
+        document.getElementById("txtResultado").value=Math.cos(num1);
+      break; 
+
     default: 
     break; 
   } 
   mostrado=""; 
   comprobador=1; 
 } 
+
+
 
 function darNumero(a)
 { 
@@ -67,6 +83,10 @@ function resultado()
      
       document.getElementById("txtResultado").value=num1/num2;
       break; 
+
+   
+
+
       default: 
     break;  
   } 
