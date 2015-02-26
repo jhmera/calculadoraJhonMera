@@ -6,6 +6,14 @@
 <body>
 <div><h2>Calculadora Jhon Mera por Git</h2></div>
   
+<div id="graficaCanvas">
+  <canvas id="canvas" width="200" height="200" style="border:1px solid black">
+
+  </canvas>
+</div>
+
+
+
   <table width="200" border="1">
 <form name="form" method="" action="">
   <tr>
@@ -111,7 +119,7 @@
     </td>
     <td colspan="3">
       <label>
-        <input type="button" name="btnCuadrado" id="btnCuadrado" value="X" />
+        <input type="button" name="btnCuadrado" id="btnCuadrado" value="X" onClick="dibujarPlanoCanvas()" />
         </label>
     
     </td>

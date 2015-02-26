@@ -94,3 +94,26 @@ function resultado()
   num1=parseFloat(document.getElementById("txtResultado").value); 
   mostrado=""; 
 } 
+
+
+
+function dibujarPlanoCanvas(){
+var C = document.getElementById("canvas");
+//se trae la propiedad de lapiz para dibujar
+dibujador= C.getContext("2d");
+
+dibujador.fillStyle="#000";
+///se dibuja eje X
+dibujador.moveTo(0,100);//
+dibujador.lineTo(200,100);
+//muestra la linea en canvas
+dibujador.stroke();
+
+
+
+///se dibuja eje Y
+dibujador.moveTo(100,0);//
+dibujador.lineTo(100,200);
+//muestra la linea en canvas
+dibujador.stroke();
+}
