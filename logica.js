@@ -40,6 +40,15 @@ function seleccionar(a)
         document.getElementById("txtResultado").value=Math.cos(num1);
       break; 
 
+      case 7: 
+      operador=7
+        document.getElementById("txtResultado").value=Math.tan(num1);
+      break;
+
+      case 8: 
+      operador=8
+        document.getElementById("txtResultado").value=Math.sqrt(num1);
+      break;
     default: 
     break; 
   } 
